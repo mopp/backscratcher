@@ -1,8 +1,18 @@
-*BackScratcher.txt* *BackScratcher*
+# BackScratcher
 
-Version: 0.1
-Author: Mopp
-License: Copyright (C) 2013 Mopp All Rights Reserved.
+## Introduction
+
+BackScratcher is Mopp's Vim Plugin as utilities.
 
 
-そのうち書く(╹◡╹)
+## Install
+
+Install the distributed files into your Vim script directory which is usually $HOME/.vim.
+You can use Neobundle
+    NeoBundle 'git://github.com/mopp/backscratcher.git'
+
+
+# Usage
+
+
+    ,。・:*:・゜’( ☻ ω ☻ )。・:*:・゜’
