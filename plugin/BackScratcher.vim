@@ -154,8 +154,8 @@ if (1 == g:BackScratcher_AutoPairParen_State)
     call s:toggle_AutoPairParen()
 endif
 
-nnoremap <unique> <script> <Plug>BackScratcher_Toggle_AutoBackParen :call <SID>toggle_AutoBackParen()<CR>
-nnoremap <unique> <script> <Plug>BackScratcher_Toggle_AutoPairParen :call <SID>toggle_AutoPairParen()<CR>
+nnoremap <silent> <script> <Plug>BackScratcher_Toggle_AutoBackParen :call <SID>toggle_AutoBackParen()<CR>
+nnoremap <silent> <script> <Plug>BackScratcher_Toggle_AutoPairParen :call <SID>toggle_AutoPairParen()<CR>
 
 if !hasmapto('<Plug>BackScratcher_Toggle_AutoBackParen', 'n')
     nmap <Leader>ab  <Plug>BackScratcher_Toggle_AutoBackParen
@@ -165,22 +165,22 @@ if !hasmapto('<Plug>BackScratcher_Toggle_AutoPairParen', 'n')
     nmap <Leader>ap  <Plug>BackScratcher_Toggle_AutoPairParen
 endif
 
-nnoremap <unique> <script> <Plug>BackScratcher_Delete_Str_A :call <SID>delete_Str_Cursol2Delimiter(0, 0)<CR>
-nnoremap <unique> <script> <Plug>BackScratcher_Delete_Str_B :call <SID>delete_Str_Cursol2Delimiter(0, 1)<CR>
-nnoremap <unique> <script> <Plug>BackScratcher_Delete_Str_C :call <SID>delete_Str_Cursol2Delimiter(1, 0)<CR>
-nnoremap <unique> <script> <Plug>BackScratcher_Delete_Str_D :call <SID>delete_Str_Cursol2Delimiter(1, 1)<CR>
+nnoremap <silent> <script> <Plug>BackScratcher_Delete_Str_A :call <SID>delete_Str_Cursol2Delimiter(0, 0)<CR>
+nnoremap <silent> <script> <Plug>BackScratcher_Delete_Str_B :call <SID>delete_Str_Cursol2Delimiter(0, 1)<CR>
+nnoremap <silent> <script> <Plug>BackScratcher_Delete_Str_C :call <SID>delete_Str_Cursol2Delimiter(1, 0)<CR>
+nnoremap <silent> <script> <Plug>BackScratcher_Delete_Str_D :call <SID>delete_Str_Cursol2Delimiter(1, 1)<CR>
 
 if !hasmapto('<Plug>BackScratcher_Delete_Str_A', 'n')
-    nmap <silent> <Leader>di <Plug>BackScratcher_Delete_Str_A
+    nmap <Leader>di <Plug>BackScratcher_Delete_Str_A
 endif
 if !hasmapto('<Plug>BackScratcher_Delete_Str_B', 'n')
-    nmap <silent> <Leader>da <Plug>BackScratcher_Delete_Str_B
+    nmap <Leader>da <Plug>BackScratcher_Delete_Str_B
 endif
 if !hasmapto('<Plug>BackScratcher_Delete_Str_C', 'n')
-    nmap <silent> <Leader>dci <Plug>BackScratcher_Delete_Str_C
+    nmap <Leader>dci <Plug>BackScratcher_Delete_Str_C
 endif
 if !hasmapto('<Plug>BackScratcher_Delete_Str_D', 'n')
-    nmap <silent> <Leader>dca <Plug>BackScratcher_Delete_Str_D
+    nmap <Leader>dca <Plug>BackScratcher_Delete_Str_D
 endif
 
 

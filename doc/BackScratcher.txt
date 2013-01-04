@@ -39,26 +39,117 @@ INSTALL                                     *backscratcher-install*
 
 ==============================================================================
 USAGE                                       *backscratcher-usage*
-    * Delete Strings
-        Default mapping is below.
-    nmap <silent> <Leader>dci <Plug>BackScratcher_Delete_Str_C
-    nmap <silent> <Leader>dca <Plug>BackScratcher_Delete_Str_D
+    See |backscratcher-key-mappings| before use.
+    I write examples below.
+    Note:Cursol position is sandwiched between two *(asterisk)
 
+* Delete Strings
+    Example code. >
+        int add(int m, int n){
+            *r*eturn m + n;
+        }
+<
+    In case of typing <Leader>da
+>
+        int add(int m, int n){
+            * *;
+        }
+<
+        In case of typing <Leader>da
+>
+        int add(int m, int n){
+            * *
+        }
+<
+    Those difference is that it includes delimiter or not.
+    If you would like to insert after delete, you can use below. >
+        <Leader>dci
+        <Leader>dca
+<
 
-    * Auto Control Parenthesis
+* Auto Control Parenthesis
+    Note:We cannot enable both.
 
+    You toggle Auto Back parenthesis >
+        <Leader>ab
+<
+    Typing "" or () or  {} or etc.
+    Then plugin automatically back cursol.
+>
+        ""* *, ()* *, {}* *,
+                ↓
+        "* *", (* *), {* *}, ...
+<
+    You toggle Auto Pair Parenthesis >
+        <Leader>ap
+<
+    typing " or ( or  { or etc.
+    Then plugin automatically complete parenthesis.
+>
+        "* * , (* * , {* * ,
+                ↓
+        ""* *, ()* *, {}* *, ...
+<
 ==============================================================================
 OPTIONS                                     *backscratcher-options*
+    These oprions changes Plugin behavior.
+    If you would like to change behavior, You add or change value in your
+    vimrc.
+
+g:BackScratcher_ParenList                   *g:BackScratcher_ParenList*
+        The default controled parenthesis list in AutoParen Functions.
+
+        Default Value is ['{}', '[]', '()', '""', '''''', '<>'].
+
+g:BackScratcher_AutoParen_log_on            *g:BackScratcher_AutoParen_log_on*
+        If this variable is 1, plugin shows log when you toggle AutoParen.
+
+        Default Value is 1.
+
+g:BackScratcher_AutoBackParen_State         *g:BackScratcher_AutoBackParen_State*
+        If this variable is 1, plugin enable automatically back parenthesis.
+
+        Default Value is 1.
+
+g:BackScratcher_AutoPairParen_State         *g:BackScratcher_AutoPairParen_State*
+        If this variable is 1, plugin enable automatically complete
+        parenthesis.
+
+        Default Value is 0.
+
+g:BackScratcher_DelimiterList               *g:BackScratcher_DelimiterList*
+       The default controled parenthesis list in delete str functions.
+
+       Default Value is [';', ':', ')', '}', ']', '.', ',', '"', ''''].
+
 ==============================================================================
 KEY MAPPINGS                                *backscratcher-key-mappings*
-==============================================================================
-EXAMPLES                                    *backscratcher-examples*
+    These are default mappings.
+    You can map below by yourself.
+
+* Delete Strings >
+    nmap <Leader>di <Plug>BackScratcher_Delete_Str_A
+    nmap <Leader>da <Plug>BackScratcher_Delete_Str_B
+    nmap <Leader>dci <Plug>BackScratcher_Delete_Str_C
+    nmap <Leader>dca <Plug>BackScratcher_Delete_Str_D
+<
+
+* Auto Control Parenthesis >
+    nmap <Leader>ab  <Plug>BackScratcher_Toggle_AutoBackParen
+    nmap <Leader>ap  <Plug>BackScratcher_Toggle_AutoPairParen
+<
+
 ==============================================================================
 CHANGELOG                                   *backscratcher-changelog*
     2013-01-04
+        - Fix some script.
+        - Add documets.
+
+    2013-01-03
         - Ver 0.1 Released.
         - Add Auto Control Paren.
         - Add Delete Strings.
+
 ==============================================================================
 
 vim:ts=4:ft=help:norl:
