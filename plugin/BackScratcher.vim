@@ -12,7 +12,7 @@ set cpo&vim
 
 " 読み込み確認
 if exists("g:loaded_BackScratcher") || 1 == &compatible
-  finish
+    finish
 endif
 let g:loaded_BackScratcher = 1
 
