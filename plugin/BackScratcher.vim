@@ -1,9 +1,9 @@
 "=============================================================================
-" FILE: BackScratcher.vim
-" AUTHOR: Mopp
-" Last Modified: 03 Jan 2013
-" License: Copyright (C) 2013 Mopp All Rights Reserved.
-" Version: 0.1 for Vim 7.3
+" File:BackScratcher.vim
+" Author:Mopp
+" Last Modified:04 Jan 2013
+" License:Copyright (C) 2013 Mopp All Rights Reserved.
+" Version:0.1 for Vim 7.3
 "=============================================================================
 
 
@@ -165,22 +165,22 @@ if !hasmapto('<Plug>BackScratcher_Toggle_AutoPairParen', 'n')
     nmap <Leader>ap  <Plug>BackScratcher_Toggle_AutoPairParen
 endif
 
-nnoremap <unique> <script> <Plug>BackScratcher_Delete_Str_A :call <SID>delete_Str_Cursol2Delimiter(0, 0)<CR>
-nnoremap <unique> <script> <Plug>BackScratcher_Delete_Str_B :call <SID>delete_Str_Cursol2Delimiter(0, 1)<CR>
-nnoremap <unique> <script> <Plug>BackScratcher_Delete_Str_C :call <SID>delete_Str_Cursol2Delimiter(1, 0)<CR>
-nnoremap <unique> <script> <Plug>BackScratcher_Delete_Str_D :call <SID>delete_Str_Cursol2Delimiter(1, 1)<CR>
+nnoremap <unique> <script> <Plug>BackScratcher_Delete_Str :call <SID>delete_Str_Cursol2Delimiter(0, 0)<CR>
+nnoremap <unique> <script> <Plug>BackScratcher_Delete_Str_A :call <SID>delete_Str_Cursol2Delimiter(0, 1)<CR>
+nnoremap <unique> <script> <Plug>BackScratcher_Delete_Str_I :call <SID>delete_Str_Cursol2Delimiter(1, 0)<CR>
+nnoremap <unique> <script> <Plug>BackScratcher_Delete_Str_IA :call <SID>delete_Str_Cursol2Delimiter(1, 1)<CR>
 
+if !hasmapto('<Plug>BackScratcher_Delete_Str', 'n')
+    nmap <silent> <Leader>di <Plug>BackScratcher_Delete_Str
+endif
 if !hasmapto('<Plug>BackScratcher_Delete_Str_A', 'n')
-    nmap <silent> <Leader>di <Plug>BackScratcher_Delete_Str_A
+    nmap <silent> <Leader>da <Plug>BackScratcher_Delete_Str_A
 endif
-if !hasmapto('<Plug>BackScratcher_Delete_Str_B', 'n')
-    nmap <silent> <Leader>da <Plug>BackScratcher_Delete_Str_B
+if !hasmapto('<Plug>BackScratcher_Delete_Str_I', 'n')
+    nmap <silent> <Leader>dci <Plug>BackScratcher_Delete_Str_I
 endif
-if !hasmapto('<Plug>BackScratcher_Delete_Str_C', 'n')
-    nmap <silent> <Leader>dci <Plug>BackScratcher_Delete_Str_C
-endif
-if !hasmapto('<Plug>BackScratcher_Delete_Str_D', 'n')
-    nmap <silent> <Leader>dca <Plug>BackScratcher_Delete_Str_D
+if !hasmapto('<Plug>BackScratcher_Delete_Str_IA', 'n')
+    nmap <silent> <Leader>dca <Plug>BackScratcher_Delete_Str_IA
 endif
 
 

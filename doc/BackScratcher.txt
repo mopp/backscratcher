@@ -1,7 +1,9 @@
 *BackScratcher.txt*     Vim version 7.3     Last change: 2013 Jan 4
 
-Author : Mopp
-Version : 0.1
+Author:Mopp
+License:Copyright (C) 2013 Mopp All Rights Reserved.
+Version:0.1 for Vim 7.3
+
 
 CONTENTS                                    *backscratcher-contents*
     Introduction                            |backscratcher-introduction|
@@ -37,6 +39,14 @@ INSTALL                                     *backscratcher-install*
 
 ==============================================================================
 USAGE                                       *backscratcher-usage*
+    * Delete Strings
+        Default mapping is below.
+    nmap <silent> <Leader>dci <Plug>BackScratcher_Delete_Str_C
+    nmap <silent> <Leader>dca <Plug>BackScratcher_Delete_Str_D
+
+
+    * Auto Control Parenthesis
+
 ==============================================================================
 OPTIONS                                     *backscratcher-options*
 ==============================================================================
