@@ -1,18 +1,23 @@
 # BackScratcher
 
 ## Introduction
-
 BackScratcher is Mopp's Vim Plugin as utilities.
 
 
 ## Install
+Install the distributed files into your Vim script directory which is usually $HOME/.vim.  
+You can use Neobundle below
 
-Install the distributed files into your Vim script directory which is usually $HOME/.vim.
-You can use Neobundle
+
     NeoBundle 'git://github.com/mopp/backscratcher.git'
 
 
-# Usage
+## Feature
+* Delete Strings.
+    * It deletes until specified delimiter(; or : or etc).
+* Auto Control Parenthesis
+    * It automatically moves cursol to in paren  when type closed paren.
+    * It automatically types closed paren.
 
-
-    ,。・:*:・゜’( ☻ ω ☻ )。・:*:・゜’
+# Usage and History
+    Please See doc/BackScratcher.txt
