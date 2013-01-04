@@ -13,6 +13,7 @@ if exists("g:loaded_BackScratcher") || 1 == &compatible
 endif
 let g:loaded_BackScratcher = 1
 
+
 "-------------------------------------------------------------------------------"
 " Default Settings
 "-------------------------------------------------------------------------------"
@@ -67,5 +68,6 @@ endif
 if !hasmapto('<Plug>BackScratcher_Delete_Str_D', 'n')
     nmap <Leader>dca <Plug>BackScratcher_Delete_Str_D
 endif
+
 
 " vim:set ft=vim sw=4:

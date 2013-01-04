@@ -144,6 +144,7 @@ CHANGELOG                                   *backscratcher-changelog*
     2013-01-04
         - Fix some script.
         - Add documets.
+        - Optimize plugin - thanks to rhysd !
 
     2013-01-03
         - Ver 0.1 Released.
