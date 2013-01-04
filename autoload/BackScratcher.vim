@@ -6,12 +6,17 @@
 " Version:0.1 for Vim 7.3
 "=============================================================================
 
-let s:save_cpo = &cpo
-set cpo&vim
+"-------------------------------------------------------------------------------"
+" Default Settings
+"-------------------------------------------------------------------------------"
+if (1 == g:BackScratcher_AutoBackParen_State)
+    let g:BackScratcher_AutoBackParen_State = 0
+    call BackScratcher#toggle_AutoBackParen()
+endif
 
-" pluginが読み込まれていないなら読み込まない
-if !exists("g:loaded_BackScratcher") || 1 == &compatible
-    finish
+if (1 == g:BackScratcher_AutoPairParen_State)
+    let g:BackScratcher_AutoPairParen_State = 0
+    call BackScratcher#toggle_AutoPairParen()
 endif
 
 "-------------------------------------------------------------------------------"
@@ -114,8 +119,5 @@ function! BackScratcher#delete_Str_Cursol2Delimiter(isInsert, isInclude)
         endif
     endfor
 endfunction
-
-let &cpo = s:save_cpo
-unlet s:save_cpo
 
 " vim:set ft=vim sw=4:
