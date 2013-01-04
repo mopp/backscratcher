@@ -1,0 +1,54 @@
+*BackScratcher.txt*     Vim version 7.3     Last change: 2013 Jan 4
+
+Author : Mopp
+Version : 0.1
+
+CONTENTS                                    *backscratcher-contents*
+    Introduction                            |backscratcher-introduction|
+        Features                            |backscratcher-features|
+        Install                             |backscratcher-install|
+    Usage                                   |backscratcher-usage|
+    Options                                 |backscratcher-options|
+    Key Mappings                            |backscratcher-key-mappings|
+    Examples                                |backscratcher-examples|
+    Changelog                               |backscratcher-changelog|
+
+
+==============================================================================
+INTRODUCTION                                *backscratcher-introduction*
+    *BackScratcher* is Mopp's Vim Plugin as utilities. It packed some feature
+    by some functions.
+    This is developed in Github(https://github.com/mopp/backscratcher.git).
+
+------------------------------------------------------------------------------
+FEATURES                                    *backscratcher-features*
+    * Delete Strings
+        * It deletes until specified delimiter(; or : or etc).
+    * Auto Control Parenthesis
+        * It automatically moves cursol to in paren  when type closed paren.
+        * It automatically types closed paren.
+
+------------------------------------------------------------------------------
+INSTALL                                     *backscratcher-install*
+    Install the distributed files into your Vim script directory which is
+    usually $HOME/.vim. you can use Neobundle below >
+        NeoBundle 'git://github.com/mopp/backscratcher.git'
+<
+
+==============================================================================
+USAGE                                       *backscratcher-usage*
+==============================================================================
+OPTIONS                                     *backscratcher-options*
+==============================================================================
+KEY MAPPINGS                                *backscratcher-key-mappings*
+==============================================================================
+EXAMPLES                                    *backscratcher-examples*
+==============================================================================
+CHANGELOG                                   *backscratcher-changelog*
+    2013-01-04
+        - Ver 0.1 Released.
+        - Add Auto Control Paren.
+        - Add Delete Strings.
+==============================================================================
+
+vim:ts=4:ft=help:norl:

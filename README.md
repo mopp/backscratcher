@@ -1,7 +1,8 @@
 # BackScratcher
 
 ## Introduction
-BackScratcher is Mopp's Vim Plugin as utilities.
+BackScratcher is Mopp's Vim Plugin as utilities.  
+and It packed some feature by some functions.
 
 
 ## Install
@@ -13,11 +14,11 @@ You can use Neobundle below
 
 
 ## Feature
-* Delete Strings.
+* Delete Strings
     * It deletes until specified delimiter(; or : or etc).
 * Auto Control Parenthesis
     * It automatically moves cursol to in paren  when type closed paren.
     * It automatically types closed paren.
 
-# Usage and History
+## Usage and History
 Please See doc/BackScratcher.txt
