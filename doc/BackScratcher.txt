@@ -120,7 +120,7 @@ g:BackScratcher_AutoPairParen_State         *g:BackScratcher_AutoPairParen_State
 g:BackScratcher_DelimiterList               *g:BackScratcher_DelimiterList*
        The default controled parenthesis list in delete str functions.
 
-       Default Value is [';', ':', ')', '}', ']', '.', ',', '"', ''''].
+       Default Value is ['.', ',', '"', '''', ';', ':', ')', '}', ']']
 
 ==============================================================================
 KEY MAPPINGS                                *backscratcher-key-mappings*
@@ -141,6 +141,10 @@ KEY MAPPINGS                                *backscratcher-key-mappings*
 
 ==============================================================================
 CHANGELOG                                   *backscratcher-changelog*
+    2013-01-14
+        - Automatically enable paren control functions when vim start.
+        - Change default values in DelimiterList.
+
     2013-01-04
         - Fix some script.
         - Add documets.
